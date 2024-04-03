@@ -94,16 +94,16 @@ function Homepage() {
                       <div className="flex p-2 pr-10 items-center">
                         <i class="fi fi-rr-heat text-[2rem]"></i>
                         <div className="pl-2">
-                          <p className="text-2xl font-medium">{weatherData?.main?.humidity} %</p>
-                          <p className="text-xs font-medium">Humidity</p>
+                          <p className="text-2xl font-semibold">{weatherData?.main?.humidity} %</p>
+                          <p className="text-xs font-semibold">Humidity</p>
                         </div>
                       </div>
                       <div>
                         <div className="flex p-3 items-center">
                           <i class="fa-solid fa-wind text-[2rem]"></i>
                           <div className="pl-2">
-                            <p className="text-xl font-medium">{weatherData?.wind?.speed} km/hr</p>
-                            <p className="text-xs font-medium">Wind speed</p>
+                            <p className="text-xl font-semibold">{weatherData?.wind?.speed} km/hr</p>
+                            <p className="text-xs font-semibold">Wind speed</p>
                           </div>
                         </div>
                       </div>
