@@ -46,3 +46,13 @@
     border-bottom: 3px solid rgba(255, 244, 244, 0.495);
 
 } 
+
+
+/* Mapbox */
+
+.pac-container {
+    display: none;
+}
+.suggessionList {
+    scrollbar-width: none;
+}
