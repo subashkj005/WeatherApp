@@ -62,11 +62,7 @@ function Homepage() {
       resData.weather[0].icon === "13d" ||
       resData.weather[0].icon === "13n"
     ) {
-    } else if (
-      resData.weather[0].icon === "50d" ||
-      resData.weather[0].icon === "50n"
-    ) {
-      setwIcon(humidity);
+      setwIcon(rain);
     } else {
       setwIcon(clear);
     }
