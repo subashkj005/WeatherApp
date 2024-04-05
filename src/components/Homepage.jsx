@@ -11,6 +11,7 @@ import snow from "../assets/images/snow.png";
 import wind from "../assets/images/wind.png";
 import humidity from "../assets/images/humidity.png";
 import { API_KEY, GOOGLE_API_KEY } from "../constants/credentials";
+import { useEffect } from "react";
 
 function Homepage() {
   const [location, setLocation] = useState("");
@@ -78,7 +79,15 @@ function Homepage() {
   const handleLocationChange = (e) =>{
     setLocation(e.target.value)
     setShowSuggession(true)
+    if (location.length <= 2) {
+      setShowSuggession(false)
+    }
   }
+
+  useEffect(() => {
+    
+  }, [setShowSuggession])
+  
 
 
   const handleSubmit = () => {
